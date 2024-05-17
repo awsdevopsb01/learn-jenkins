@@ -11,10 +11,9 @@ pipeline {
         }
     }
   }
-}
-
-post {
-  always {
-    sh 'echo I will always say Hello again!'
+  post {
+    always {
+      sh 'echo I will always say Hello again!'
+    }
   }
 }
