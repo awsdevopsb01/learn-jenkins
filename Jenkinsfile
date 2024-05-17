@@ -31,6 +31,15 @@ options {
             sh 'echo sample trigger created'
         }
     }
+    stage("Sample1")
+      when {
+        expression {
+          GIT_BRANCH == "origin/develop"
+        }
+      }
+      steps {
+      sh 'env'
+      }
   }
 
   post {
