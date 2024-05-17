@@ -4,6 +4,7 @@ pipeline {
         label 'workstation'
       }
     }
+
 triggers { pollSCM('H/1 * * * *') }
 
 options {
@@ -20,6 +21,10 @@ options {
 
   stages {
     stage('Sample') {
+      input {
+         message "Should we continue?"
+         ok "Yes"
+         }
         steps {
             sh 'echo Hello Lokesh'
             sh 'echo sample web ${SAMPLE_web}'
