@@ -23,6 +23,7 @@ options {
         steps {
             sh 'echo Hello Lokesh'
             sh 'echo sample web ${SAMPLE_web}'
+            sh 'echo sample trigger created'
         }
     }
   }
