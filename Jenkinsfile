@@ -4,7 +4,7 @@ pipeline {
         label 'workstation'
       }
     }
-triggers{ pollSCM('H/1 * * * *') }
+triggers { pollSCM('H/1 * * * *') }
 
 options {
   ansiColor('xterm')
