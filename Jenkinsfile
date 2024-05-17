@@ -5,9 +5,14 @@ pipeline {
       }
     }
 
+options {
+  ansiColor('xterm')
+  }
+
  environment {
    SAMPLE_web = "lokesh.com"
    }
+
   stages {
     stage('Sample') {
         steps {
